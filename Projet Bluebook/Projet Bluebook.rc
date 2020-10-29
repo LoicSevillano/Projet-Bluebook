@@ -1,0 +1,244 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Français (France) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CHARGE DIALOGEX 0, 0, 309, 176
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Calcul charges"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,198,155,50,14
+    PUSHBUTTON      "Annuler",IDCANCEL,252,155,50,14
+    LTEXT           "Quel est le montant a declarer :",IDC_STATIC,8,13,102,8
+    EDITTEXT        IDC_MONTANT,114,11,79,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Mois :",IDC_STATIC,229,25,20,8
+    LISTBOX         IDC_MOIS,229,34,48,37,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Montant des charges :",IDC_STATIC,37,36,73,8
+    EDITTEXT        IDC_CHARGE,114,34,79,14,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER
+    LTEXT           "Montant de l'impot :",IDC_STATIC,46,53,64,8
+    EDITTEXT        IDC_IMPOT,114,51,79,14,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER
+    LTEXT           "Montant Total :",IDC_STATIC,60,77,50,8
+    EDITTEXT        IDC_TOTAL,114,75,79,14,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER
+    PUSHBUTTON      "Calculer",IDC_CALCULER,127,100,50,14
+END
+
+IDD_INFORMATION DIALOGEX 0, 0, 309, 176
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Informations"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,198,155,50,14
+    PUSHBUTTON      "Annuler",IDCANCEL,252,155,50,14
+    COMBOBOX        IDC_COMBOMOIS,232,27,57,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Coordonnées",IDC_COMBOBOX,14,15,209,80
+    CONTROL         "M.",IDC_M,"Button",BS_AUTORADIOBUTTON,53,26,24,10
+    CONTROL         "Mme.",IDC_MME,"Button",BS_AUTORADIOBUTTON,20,26,33,10
+    CONTROL         "Oui",IDC_CHECKYES,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,23,127,27,10
+    LTEXT           "Sélectionnez le mois en cours",IDC_STATIC,237,54,62,90
+    GROUPBOX        "Mois",IDC_STATIC,228,15,66,131
+    GROUPBOX        "Pole Emploi",IDC_STATIC,14,100,210,46
+    LTEXT           "Percevez vous l'Allocation de retour à l'emploi ?",IDC_STATIC,19,113,151,8
+    CONTROL         "Non",IDC_CHECKNO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,53,127,29,10
+    EDITTEXT        IDC_INFONOM,53,39,109,14,ES_AUTOHSCROLL
+    LTEXT           "Nom :",IDC_STATIC,31,42,20,8
+    LTEXT           "Prénom :",IDC_STATIC,21,59,30,8
+    EDITTEXT        IDC_INFOPRENOM,53,57,109,14,ES_AUTOHSCROLL
+END
+
+IDD_MODLESS DIALOGEX 0, 0, 309, 176
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_CLIENTS DIALOGEX 0, 0, 409, 326
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Clients"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,198,305,50,14
+    PUSHBUTTON      "Annuler",IDCANCEL,352,305,50,14
+    LISTBOX         IDC_LIST_CLIENT,262,22,126,239,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Nom :",IDC_STATIC,36,35,29,13,SS_CENTERIMAGE
+    EDITTEXT        IDC_NOM,67,35,141,14,ES_AUTOHSCROLL
+    LTEXT           "Prénom :",IDC_STATIC,36,54,29,13,SS_CENTERIMAGE
+    EDITTEXT        IDC_PRENOM,67,54,141,14,ES_AUTOHSCROLL
+    LTEXT           "Adresse :",IDC_STATIC,36,73,29,13,SS_CENTERIMAGE
+    EDITTEXT        IDC_ADRESSE,67,73,141,14,ES_AUTOHSCROLL
+    LTEXT           "CP :",IDC_STATIC,37,93,29,13,SS_CENTERIMAGE
+    EDITTEXT        IDC_CP,68,93,141,14,ES_AUTOHSCROLL
+    LTEXT           "Ville :",IDC_STATIC,37,112,29,13,SS_CENTERIMAGE
+    EDITTEXT        IDC_VILLE,68,112,141,14,ES_AUTOHSCROLL
+    GROUPBOX        "Coordonnées",IDC_STATIC,25,18,227,128
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_CHARGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 8
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+
+    IDD_INFORMATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+
+    IDD_MODLESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+
+    IDD_CLIENTS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 402
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 319
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_CHARGE AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_INFORMATION AFX_DIALOG_LAYOUT
+BEGIN
+    0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 100,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0
+END
+
+IDD_MODLESS AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_CLIENTS AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_MAIN MENU
+BEGIN
+    POPUP "&Fichier"
+    BEGIN
+        MENUITEM "Ouvrir",                      ID_FICHIER_OUVRIR
+        MENUITEM "Fermer",                      ID_FICHIER_FERMER
+        MENUITEM "&Fenêtre Libre",              ID_FICHIER_FENETRE_LIBRE
+        MENUITEM "Informations",                ID_FICHIER_INFORMATIONS
+        MENUITEM "&Charges",                    ID_FICHIER_CHARGES
+        MENUITEM "Clients",                     ID_FICHIER_CLIENTS
+        MENUITEM SEPARATOR
+        MENUITEM "&Exit",                       ID_FICHIER_EXIT
+    END
+END
+
+#endif    // Français (France) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

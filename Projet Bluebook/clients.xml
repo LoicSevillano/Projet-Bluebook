@@ -1,0 +1,4 @@
+﻿<Client>
+	<Caracteristique Nom="Sevillano" Prenom="Loic" Adresse="9 bis rue du Stade" CodePostal="64110" Ville="Uzos"></Caracteristique>
+	<Caracteristique Nom="Krzysztofik" Prenom="Agatha" Adresse="9 bis rue du Stade" CodePostal="64110" Ville="Uzos"></Caracteristique>
+</Client>
