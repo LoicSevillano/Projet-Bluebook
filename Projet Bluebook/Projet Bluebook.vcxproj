@@ -150,6 +150,7 @@
     <ClCompile Include="calcul_charges.cpp" />
     <ClCompile Include="montant_total.cpp" />
     <ClCompile Include="fenetremodless.cpp" />
+    <ClCompile Include="rectangle.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Projet Bluebook.rc" />
@@ -162,6 +163,7 @@
     <ClInclude Include="MacroCommandeStructure.h" />
     <ClInclude Include="poolalloc.h" />
     <ClInclude Include="poolstorage.h" />
+    <ClInclude Include="rectangle.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="stringutils.hpp" />
     <ClInclude Include="Tools.h" />
