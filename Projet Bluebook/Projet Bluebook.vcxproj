@@ -24,7 +24,7 @@
     <ProjectGuid>{82123e74-d8f3-4d8e-bdaa-1017c1d21c3e}</ProjectGuid>
     <RootNamespace>ProjetBluebook</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>IDD_MODLESS</ProjectName>
+    <ProjectName>BlueBook</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
