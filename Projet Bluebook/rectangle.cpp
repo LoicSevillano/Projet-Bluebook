@@ -23,4 +23,11 @@ int Crectangle::Perimetre()
 {
 	return 2 * (Longueur() + Largeur());
 }
+Crectangle::Crectangle(int lLeft, int rRight, int tTop, int bBottom)
+{
+	m_left = lLeft;
+	m_right = rRight;
+	m_top = tTop;
+	m_bottom = bBottom;
+}
 

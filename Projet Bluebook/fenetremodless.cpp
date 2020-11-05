@@ -136,11 +136,7 @@ void peinturefenetre(HWND hWnd,HDC hDc)
 	DeleteObject(image);
 	DeleteObject(font);
 
-	Crectangle Mon_Rectangle;
-	Mon_Rectangle.m_left = 12;
-	Mon_Rectangle.m_right = 123;
-	Mon_Rectangle.m_top = 34;
-	Mon_Rectangle.m_bottom = 955;
+	Crectangle Mon_Rectangle(12, 123, 34, 955);
 
 	int Peri = Mon_Rectangle.Perimetre();
 }

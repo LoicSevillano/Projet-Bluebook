@@ -143,6 +143,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="calcul_impots.cpp" />
+    <ClCompile Include="Ccontrole.cpp" />
+    <ClCompile Include="Ceditcontrole.cpp" />
+    <ClCompile Include="Cfenetres.cpp" />
     <ClCompile Include="charges.cpp" />
     <ClCompile Include="Clients.cpp" />
     <ClCompile Include="Entry.cpp" />
@@ -156,6 +159,9 @@
     <ResourceCompile Include="Projet Bluebook.rc" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Ccontrole.h" />
+    <ClInclude Include="Ceditcontrole.h" />
+    <ClInclude Include="Cfenetres.h" />
     <ClInclude Include="Clients.h" />
     <ClInclude Include="fenetremodless.h" />
     <ClInclude Include="Fonctionglobal.h" />

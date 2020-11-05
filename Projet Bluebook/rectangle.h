@@ -12,6 +12,6 @@ public:
 	int Longueur();
 	int Largeur();
 
-	
+	Crectangle(int lLeft, int rRight, int tTop, int bBottom);
 };
 
